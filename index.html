@@ -10,7 +10,7 @@ body {
 	background-attachment: fixed;
 }
 
-	a.class1:link {
+a.class1:link {
     	color: black;
     	background-color: transparent;
     	text-decoration: none;
@@ -34,7 +34,31 @@ a.class1:active {
     	text-decoration: none;
 }
 
-	
+a.class2:link {
+    	color: lightblue;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class2:visited {
+    	color: blue;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class2:hover {
+    	color: blue;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+a.class2:active {
+    	color: black;
+    	background-color: transparent;
+    	text-decoration: none;
+}
+
+
 .main {
 	color: white;
 	text-align: center;
@@ -43,7 +67,7 @@ a.class1:active {
 
 .img1 {
 	border-radius: 50%;
-	width: 15%;
+	width: 65%;
 }
 
 .img2 {
@@ -53,11 +77,11 @@ a.class1:active {
 
 .lmenu {
 	float: left;
-	font-size: 400%;
+	font-size: 200%;
 	color: white;
 	position: relative;
-	text-align: center;
-	padding: 5% 0% 0% 27%;
+	text-align: left;
+	padding: 1% 0% 1% 1%;
 	font-family: "helvectica", monospace, serif;
 }
 
@@ -73,17 +97,25 @@ a.class1:active {
 
 .picset {
 	float: left;
-	position: absolute;
-	background: rgba(255, 255, 255, 0.3);
+	position: relative;
+	background: rgba(255, 255, 255, 0.2);
 	width: 15%;
 	margin: 1%;
+	padding: 1% 0% 3% 0%;
+	font-family: "helvectica", monospace, serif;
+	font-size: 150%;
+	z-index: -1;
 }
 
 .picset2 {
-	display: inline-block;
-	background: rgba(255, 255, 255, 0.3);
-	width: 46%;
+	float: right;
+	position: relative;
+	background: rgba(255, 255, 255, 0.2);
+	width: 81%;
 	margin: 1%;
+	padding: 1% 0% 5% 0%;
+	font-family: "helvectica", monospace, serif;
+	z-index: -1;
 }
 
 .title {
@@ -96,10 +128,35 @@ a.class1:active {
 	font-family: "helvectica", monospace, serif;
 	font-size: 250%;
 	text-align: center;
+	padding: 0% 0% 0% 2%;
 }
 
 .topic { 
 	float: left;
+	position: absolute;
+	margin: 0% 2% 0% 4%;
+}
+
+.topic2 { 
+	float: left;
+	position: absolute;
+}
+
+
+h {
+	font-size: 175%;
+}
+
+h2 {
+	font-size: 375%;
+}
+
+p {
+	font-size: 100%;
+}
+
+.vid {
+	clear: right;
 	position: absolute;
 }
 
@@ -108,11 +165,12 @@ a.class1:active {
 <body>
 
 <div class="title">
-	<div class="topic">
-		<img class="img2" src="eye2.png">
-	</div>
-	<a href="officialfm.htm" class="class1">Home&nbsp&nbsp&nbsp&nbsp</a>
-<a href="uts.htm" class="class1">&nbsp&nbsp&nbsp&nbspEssay&nbsp&nbsp&nbsp&nbsp</a>
+<div class="topic2">About</div>
+<div class="topic">
+<img class="img2" src="eye2.png">
+</div>
+<a href="officialfm.htm" class="class1">Home&nbsp&nbsp&nbsp&nbsp</a>
+<a href="essay.htm" class="class1">&nbsp&nbsp&nbsp&nbspEssay&nbsp&nbsp&nbsp&nbsp</a>
 <a href="uts.htm" class="class1">&nbsp&nbsp&nbsp&nbspSolution</a>
 </div>
 
@@ -120,12 +178,40 @@ a.class1:active {
 
 <p>&nbsp</p>
 
-<div class="lmenu"></div>
+<div class="picset">
+<h>Who:</h>
+<br><br>Connor Hoffmann<br><br>
+<img class="img1" src="face.jpg"><br>
+<h>What:</h><br><br>
+I-Search Essay<br><br>
+<h>When:</h><br><br>
+Written:<br>September 25, 2017<br><br>
+Website Created:<br>November 20, 2017<br><br>
+<h>Where:</h><br><br>
+NAU ENG-105<br><br>
+<h>Why:</h><br><br>
+To research and gain<br>knowledge on a topic of interest
+</div>
 
-<div class="rmenu"></div>
-<p>&nbsp</p>
-<div class="picset"><iframe style="width:100%;height:100%;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=byconnor-20&marketplace=amazon&region=US&placement=B076VVK6GZ&asins=B076VVK6GZ&linkId=a7789f576e736d7432ab67b03c3650ae&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
-    </iframe></div>
+<div class="picset2">
+	<h2><b>Facts About Colorblindness<b></h2>
+<iframe width="420" height="345" src="https://www.youtube.com/watch?v=CGhfm2IhR6w">
+</iframe>
+<div class="lmenu">		
+<ul>
+	<li>Take a colorblind test <a href="http://enchroma.com/test/instructions/" class="class2"> Here </a></li><br>
+	<li>Many people throughout the world are colorblind</li><br>
+	<li>There are multiple types of colorblindness (protan, deutan, and tirtan)</li><br>
+	<li>Some people are completely colorblind</li><br>
+	<li>There are three main color pigments that the eye uses to identify a color<br>(Red, Blue, Green)</li><br>
+	<li>Glasses are avalible on Amazon <a href="https://www.amazon.com/gp/product/B076VVK6GZ/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B076VVK6GZ&linkCode=as2&tag=byconnor-20&linkId=cde4329f9ad17a623ca839dd127e31ea" class="class2">Here</a> that can help the colorblind</li><br>
+	<li>It is more common for men to be colorblind than women</li><br>
+	<li>Europeans are more likely to be colorblind than anyone else</li><br>
+	<li>Genetics are primarily responsible for colorblindness</li><br>
+	<li></li><br>
+</ul>
+</div>
+</div>
 
 </div>
 
