@@ -3,18 +3,21 @@
 <head>
 <style>
 
-#background_wrap {
-    z-index: -2;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    background-image: url('bg1.jpg');
-    background-attachment: fixed;
-	background-repeat: no-repeat;
-}	
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(bg1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 a.class1:link {
     	color: black;
@@ -147,7 +150,7 @@ p2 {
 </style>
 </head>
 <body>
-<div id="background_wrap"></div>
+
 <div class="title">
 <div class="topic">
 <img class="img2" src="eye2.png">
